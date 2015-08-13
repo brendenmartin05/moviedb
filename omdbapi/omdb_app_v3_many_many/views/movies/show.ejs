@@ -1,0 +1,26 @@
+<div class="well">
+  <p><img src="<%= movie.Poster %>" height="250" class="pull-right"></p>
+  <h2><%= movie.Title %></h2>
+  <p><%= movie.Director %></p>
+  <p><%= movie.Rated %></p>
+  <p><%= movie.Runtime %></p>
+  <p><%= movie.tomatoRating %></p>
+  <p> <%= movie.Awards %> </p>
+  <br><br><br>
+  <p><%= movie.Plot %></p>
+
+  <% if(favorite){ %>
+    <b>This movie is in your favorites.</b>
+  <% } else { %>
+    <form method="post" action="/favorites">
+      <input type="hidden" name="title" value="<%= movie.Title %>">
+      <input type="hidden" name="year" value="<%= movie.Year %>">
+      <input type="hidden" name="poster" value="<%= movie.Poster %>">
+      <input type="hidden" name="imdbId" value="<%= movie.imdbID %>">
+      <input type="submit" class="btn btn-primary" value="Add to Favorites">
+    </form>
+  <% } %>
+</div>
+<!-- <pre>
+<%= JSON.stringify(movie,null,4) %>
+</pre> -->

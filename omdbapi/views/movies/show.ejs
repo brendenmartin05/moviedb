@@ -1,12 +1,6 @@
-<% include ../shared/header.ejs %>
-
-<h1> Results</h1>
-<% myMovies.forEach(function(results){ %>
 <div class="well">
-
-  <a href="movieinfo/<%= results.imdbID %>"><%= results.Title%></a>
-
+<h2><%= movie.Title %></h2>
+<p><%= movie.Plot %></p>
+    <button class ="btn btn-warning glyphicon glyphicon-eye-open">
+    <button class="btn btn-danger glyphicon glyphicon-heart">
 </div>
- <% }); %>
-
-<% include ../shared/footer.ejs %>

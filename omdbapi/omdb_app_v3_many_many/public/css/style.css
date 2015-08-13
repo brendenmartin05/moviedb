@@ -1,0 +1,16 @@
+body {
+  background-image: url('http://photos.cntraveler.com/2014/08/06/53e2f230c2d3f39d3610b4b6_the-best-outdoor-movie-theater-st-george-open-air-cinema_cr_Andrew-Maccoll.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: cover;
+  position: relative;
+}
+
+.opacity {
+  opacity: 0.8;
+}
+
+.well {
+  margin: 5px;
+}
+

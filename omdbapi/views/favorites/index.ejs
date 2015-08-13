@@ -1,0 +1,11 @@
+<section class="results-area">
+  <h3>FAVORITES</h3>
+  <ul>
+  <% favList.forEach(function(movie){ %>
+    <li>
+    <%- link_to(movie.title + "(" + movie.year + ")", "/movies/" + movie.imdbId) %>
+    <%- link_to("comments", "/favorites/" + movie.imdbId + "/comments", {id: "comment-link"} )%>
+    </li>
+  <% }); %>
+  </ul>
+</section>

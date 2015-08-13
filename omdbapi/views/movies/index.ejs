@@ -1,0 +1,10 @@
+
+
+<% movies.Search.forEach(function(movie) { %>
+<div class="col-md-4">
+  <div class="well">
+    <h2><a href="/movies/<%= movie.imdbID %>"><%= movie.Title %></a></h2>
+
+  </div>
+</div>
+<% }); %>

@@ -1,0 +1,8 @@
+<h1>All Tags</h1>
+
+<% tags.forEach(function(tag) { %>
+<div class="well">
+  <h2><a href="/favorites/tags/<%= tag.id %>">#<%= tag.name %></a></h2>
+  <h3><%= tag.favorites.length %></h3>
+</div>
+<% }); %>
